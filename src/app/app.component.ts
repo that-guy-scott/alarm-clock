@@ -1,10 +1,17 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {AlarmClockService} from "./alarm-clock.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'alarm-clock';
+
+  constructor(public service: AlarmClockService) {
+    service.startClock();
+  }
+
+
+
 }

@@ -1,0 +1,103 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden !important;
+  background-color: black;
+  background: radial-gradient(circle, #161616 0%, #000000 100%);
+  background: radial-gradient(circle, #0e0a19 0%, #000000 100%);
+  background: radial-gradient(circle, #000 0%, #0e0a19 25%, #000 50%, #0e0a19 75%, #000000 100%);
+  background: radial-gradient(circle, #000 0%, #000000 25%, #000 50%, #180c11 75%, #000000 100%);
+  /* add a carbon fiber texture to the background */
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.digital-clock {
+  font-family: 'DS-Digital', sans-serif;
+  font-size: 96px;
+  cursor: pointer;
+  /*color: #dccb9f;*/
+  color: #f5cf7d;
+  font-weight: bold;
+  text-shadow: 0 0 10px #a00000, 0 0 20px #a00000, 0 0 30px #a00000, 0 0 40px #a00000; /* #a00000 glow effect */
+}
+
+.time {
+  border: 1px solid crimson;
+  width: 500px;
+}
+
+.am-pm {
+  border: 1px solid crimson;
+}
+
+.date {
+  margin-top: 15px;
+  color: darkgrey;
+  font-size: 24px;
+  cursor: context-menu;
+
+  /*border-top: 3px solid #141414;*/
+  padding: 5px 90px 0px 90px;
+  font-family: Arial, sans-serif;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(1px, 1px) rotate(0deg);
+  }
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
+  }
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+  50% {
+    transform: translate(-1px, 2px) rotate(-1deg);
+  }
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
+  }
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+  100% {
+    transform: translate(1px, -2px) rotate(-1deg);
+  }
+}
+
+.alarm-icon {
+  font-size: 200px;
+  margin: 5px;
+  display: inline-block;
+  animation: shake 0.5s infinite;
+  position: absolute;
+  top: 25%;
+  /*left: 50%;*/
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+.alarm-set-icon {
+  font-size: 14px;
+}
