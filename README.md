@@ -10,6 +10,13 @@ This project is a simple yet functional digital alarm clock built with Angular. 
 - Visual and audio alarm notifications
 - Responsive design
 
+
+<p align="center">
+  <img src="/img.png" alt="Description of Image">
+</p>
+
+
+
 ## Prerequisites
 
 Before you begin, ensure you have met the following requirements:
